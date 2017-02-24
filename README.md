@@ -1,5 +1,5 @@
 ```php
-require_once __DIR__.'/class.db.php';
+require_once __DIR__.'/class.db.php'; // https://github.com/im4aLL/pdo-mysql-driver
 require_once __DIR__.'/../class.paginate.php';
 
 $config = [
