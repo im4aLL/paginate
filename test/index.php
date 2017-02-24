@@ -15,7 +15,7 @@ $db->connect($config);
 $total = $db->query("SELECT id FROM orders")->get();
 
 $paginate = new Paginate([
-    'per_page' => 3,
+    'per_page' => 1,
     'page_param' => 'page',
     'page_url' => 'http://localhost/paginate/test/',
     'total_record' => count($total),
@@ -42,3 +42,21 @@ Page <?= $paginate->currentPage() ?> of <?= $paginate->totalPage() ?>
 
 <a href="<?= $paginate->previousPageUrl() ?>">Previous page</a>
 <a href="<?= $paginate->nextPageUrl() ?>">Next page</a>
+
+<hr>
+
+<a href="<?= $paginate->firstPageUrl() ?>">First page</a>
+<a href="<?= $paginate->lastPageUrl() ?>">Last page</a>
+
+<hr>
+
+<?php
+foreach($paginate->pages() as $page) {
+    if($page['number']) {
+        echo ' <a href="'.$page['url'].'">'.$page['number'].'</a> ';
+    }
+    else {
+        echo ' ... ';
+    }
+}
+
