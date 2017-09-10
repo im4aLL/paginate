@@ -1,6 +1,12 @@
+## Installation
+```
+composer require hadi/paginate
+```
+
+
+### Usage
 ```php
-require_once __DIR__.'/class.db.php'; // https://github.com/im4aLL/pdo-mysql-driver
-require_once __DIR__.'/../class.paginate.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $config = [
     'host' => 'localhost',
@@ -9,12 +15,12 @@ $config = [
     'password' => '',
 ];
 
-$db = new Database();
+$db = new \Hadi\Database(); 											// https://github.com/im4aLL/pdo-mysql-driver
 $db->connect($config);
 
 $total = $db->query("SELECT id FROM orders")->get();
 
-$paginate = new Paginate([
+$paginate = new \Hadi\Paginate([
     'per_page' => 1,
     'page_param' => 'page',
     'page_url' => 'http://localhost/paginate/test/',
@@ -32,8 +38,10 @@ foreach($orders as $order) {
 }
 
 $db->disconnect();
-?>
+```
 
+### More usage
+```php
 <br><br>
 Total records: <?= $paginate->totalRecord() ?>
 <hr>

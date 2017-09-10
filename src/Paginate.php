@@ -1,9 +1,9 @@
 <?php
-
 /**
  * Class Paginate
  *
  * @author me@habibhadi.com
+ * @version 1.0.0
  */
 
 namespace Hadi;
