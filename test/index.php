@@ -55,7 +55,7 @@ foreach($paginate->pages() as $page) {
         echo ' <a href="'.$page['url'].'">'.$page['number'].'</a> ';
     }
     else {
-        echo ' ... ';
+        echo ' .... ';
     }
 }
 
