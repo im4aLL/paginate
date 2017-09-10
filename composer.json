@@ -1,0 +1,21 @@
+{
+    "name": "hadi/paginate",
+    "description": "Simple pagination class",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Habib Hadi",
+            "email": "me@habibhadi.com"
+        }
+    ],
+    "require": {
+		"php": ">=5.3.0",
+        "hadi/database": "^1.0"
+	},
+	"autoload": {
+        "psr-4": {"Hadi\\": "src/"}
+    },
+    "minimum-stability": "stable",
+	"version": "1.0.0"
+}

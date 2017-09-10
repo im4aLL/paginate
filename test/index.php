@@ -1,6 +1,5 @@
 <?php
-require_once __DIR__.'/class.db.php';
-require_once __DIR__.'/../class.paginate.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
 $config = [
     'host' => 'localhost',
@@ -9,12 +8,12 @@ $config = [
     'password' => '',
 ];
 
-$db = new Database();
+$db = new \Hadi\Database();
 $db->connect($config);
 
 $total = $db->query("SELECT id FROM orders")->get();
 
-$paginate = new Paginate([
+$paginate = new \Hadi\Paginate([
     'per_page' => 1,
     'page_param' => 'page',
     'page_url' => 'http://localhost/paginate/test/',

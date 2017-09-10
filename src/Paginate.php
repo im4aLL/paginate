@@ -6,6 +6,7 @@
  * @author me@habibhadi.com
  */
 
+namespace Hadi;
 
 class Paginate
 {

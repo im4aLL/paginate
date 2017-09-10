@@ -1,0 +1,57 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "34a817a53ebfb11f24d4f29de7e862ee",
+    "content-hash": "4da110484d7aace32036a4bc03c4db0c",
+    "packages": [
+        {
+            "name": "hadi/database",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/im4aLL/pdo-mysql-driver.git",
+                "reference": "684da895a009b371912197b966926118cf438fd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/im4aLL/pdo-mysql-driver/zipball/684da895a009b371912197b966926118cf438fd4",
+                "reference": "684da895a009b371912197b966926118cf438fd4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Hadi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Habib Hadi",
+                    "email": "me@habibhadi.com"
+                }
+            ],
+            "description": "Simple database driver for mysql (PDO)",
+            "time": "2017-09-10 11:19:33"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": []
+}
